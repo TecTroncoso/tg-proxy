@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "https://api.telegram.org/$1"
+      "source": "/bot(.*)",
+      "destination": "https://api.telegram.org/bot$1"
+    },
+    {
+      "source": "/gofile/(.*)",
+      "destination": "https://api.gofile.io/$1"
     }
   ]
 }
